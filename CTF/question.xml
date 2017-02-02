@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<questions>
+  <question category="1">
+    <qid>1</qid>
+    <title>SAMPLE</title>
+    <score>10</score>
+    <data>
+QUESTION DESCRIPTION
+      </data>
+  </question>
+</questions>
