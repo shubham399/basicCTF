@@ -27,7 +27,7 @@ if(!$f)
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 <input class="form-control" type="text" placeholder="Enter the Flag Here" name="flag"/>
 <input type="hidden" value="<?php echo $qid;?>" name="qid"/>
-<input type="submit" class="btn btn-primary btn-block" value="Submit" name="Submit"/>
+<input type="submit" class="btn btn-danger btn-block" value="Submit" name="Submit"/>
 </form>
 <?php
 }
