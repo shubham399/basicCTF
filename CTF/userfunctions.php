@@ -82,4 +82,51 @@ function adduser($uname,$email,$pass)
     return 0;
   }
 }
+// Login form
+function get_loginform()
+{
+?>
+<h3 "text-center">Login </h3>
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+  <div class="form-group">
+  <input class="form-control" type="text" placeholder="USERNAME" name="username" value="<?php echo $uname; ?>"
+  />
+  <label style="color:red;"><?php echo $uerr; ?> </label>
+</div><div class="form-group">
+  <input class="form-control" type="password" placeholder="PASSWORD" name="pass"/>
+  <label style="color:red;"><?php echo $perr; ?> </label>
+</div><div class="form-group">
+<input class="btn btn-primary btn-block" type="submit" name="login" value="Login"/>
+</div>
+</form><!--LOGIN FORM -->
+</div><!--Login-->
+<?php
+}
+function get_registerform()
+{
+?>
+<h3 "text-center">Register   </h3>
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+  <div class="form-group">
+  <input class="form-control" type="text" placeholder="USERNAME" name="username" value="<?php echo $runame; ?>"/>
+  <label style="color:red;"><?php echo $ruerr; ?> </label>
+</div>
+<div class="form-group">
+<input class="form-control" type="email" placeholder="EMAIL" name="email"value="<?php echo $remail; ?>"/>
+<label style="color:red;"><?php echo $emerr; ?> </label>
+</div>
+<div class="form-group">
+  <input class="form-control" type="password" placeholder="PASSWORD" name="pass"/>
+  <label style="color:red;"><?php echo $rperr; ?> </label>
+</div>
+<div class="form-group">
+  <input class="form-control" type="password" placeholder="CONFIRM PASSWORD" name="cpass"/>
+  <label style="color:red;"><?php echo $cperr; ?> </label>
+</div>
+<div class="form-group">
+<input class="btn btn-primary btn-block" type="submit" name="register" value="Register"/>
+</div><!--Register -->
+</form>
+<?php
+}
 ?>
